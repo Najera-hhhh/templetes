@@ -1,0 +1,161 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.center {
+    text-align: center;
+    margin: auto;
+}
+
+.nav {
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    background: rgb(2, 0, 36);
+    background: #1a94f3;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.opciones-nav {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+    padding: 20px 0px;
+}
+
+.opciones-nav-button {
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.opciones-button--selected {
+    border: solid 1px white;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.persentation-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("../img/dog-4415649_1280.jpg");
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.persentation-img__text {
+    text-align: center;
+    padding: 0px 30%;
+    color: rgb(71, 59, 59);
+    font-size: 3.4em;
+}
+
+.presentation-img__header4 {
+    margin-top: 10px;
+    font-size: 1.6em;
+    color: rgb(51, 48, 48);
+}
+
+.cover {
+    width: 100%;
+    height: 100vh;
+}
+
+.contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    margin: auto;
+}
+
+.contacto__text {
+    margin: auto;
+    padding: 100px 0px;
+    font-size: 1.2em;
+}
+
+.nosotros {
+    margin: 0px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.nosotros__header {
+    color: rgb(71, 59, 59);
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.nosotros__text {
+    color: rgb(71, 59, 59);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.nosotros__img {
+    width: 100%;
+    height: 400px;
+}
+
+@media (min-width: 1900px) {
+    body {
+        font-size: 25px;
+    }
+    .nosotros {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .nav__options {
+        overflow-y: scroll;
+        justify-content: normal;
+        align-items: initial;
+        padding: 0px;
+        margin: 0px;
+        margin-top: 10vh;
+        padding-bottom: 10px;
+        padding-top: 20px;
+        width: 100%;
+        height: 90vh;
+        background: #fff;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        transition: 1s left;
+        top: 0px;
+        left: 0px;
+        z-index: 5;
+    }
+    .nav__btn-container {
+        visibility: visible;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        z-index: 2;
+    }
+    .nav__options--close {
+        transition: 1s left;
+        left: -100%;
+    }
+    .persentation-img__text {
+        padding: 0px;
+    }
+}

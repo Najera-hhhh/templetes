@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/veterinaria.css">
+    <title>Plantilla</title>
+</head>
+
+<body>
+
+    <nav class="nav">
+        <div class="nav__btn-container ">
+            <button id="openCloseButton" class="btn nav__btn bnt--minimal">
+                <i class="btn__icon fa fa-bars fa-x2" aria-hidden="true"></i>
+            </button>
+        </div>
+
+        <div class="center">
+            <h1 class="center">4H canino</h1>
+        </div>
+
+        <div id="options" class="opciones-nav nav__options nav__options--close">
+            <button name="btn-nav" class="opciones-nav-button opciones-button--selected" onclick="select(this,'home')">Home</button>
+            <button name="btn-nav" class="opciones-nav-button" onclick="select(this,'Promociones')">Promociones</button>
+            <button name="btn-nav" class="opciones-nav-button" onclick="select(this,'Servicios')">Servicios</button>
+            <button name="btn-nav" class="opciones-nav-button" onclick="select(this,'Contactanos')">Contactanos</button>
+        </div>
+    </nav>
+
+    <section>
+        <div class="persentation-img">
+            <h1 class="persentation-img__text">
+                El alojamiento perfecto para tu perro
+            </h1>
+            <span class="presentation-img__header4">Bienvenido a nuestro hotel canino</span>
+        </div>
+    </section>
+
+    <div class="container">
+        <section>
+            <div class="cover">
+                <div class="contacto">
+                    <div class="contacto__text">
+                        <i></i> 9999999999
+                    </div>
+                    <div class="contacto__text">
+                        <i></i> webmaster@gmail.com
+                    </div>
+                </div>
+                <div class="nosotros">
+                    <div class="nosotros__text">
+                        <h3 class="nosotros__header">Por que nosotros</h3>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis excepturi repudiandae ipsa debitis alias. Quas ipsam dolorem tenetur quibusdam illo consequatur alias veritatis eaque excepturi totam! Cumque laudantium magni optio rerum! Exercitationem,
+                        alias vero! Eum maiores magni veritatis? Nemo ea commodi reiciendis saepe repellat ducimus possimus eveniet nulla quibusdam fuga!
+                    </div>
+                    <img class="nosotros__img" src="img/dog-4415649_1280.jpg" alt="">
+                    <div class="nosotros__text">
+                        <h3 class="nosotros__header">Nuestros servicios</h3>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis excepturi repudiandae ipsa debitis alias. Quas ipsam dolorem tenetur quibusdam illo consequatur alias veritatis eaque excepturi totam! Cumque laudantium magni optio rerum! Exercitationem,
+                        alias vero! Eum maiores magni veritatis? Nemo ea commodi reiciendis saepe repellat ducimus possimus eveniet nulla quibusdam fuga!
+                    </div>
+                    <img class="nosotros__img" src="img/dog-4415649_1280.jpg" alt="">
+                    <div class="nosotros__text">
+                        <h3 class="nosotros__header">Sobre nosotros</h3>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis excepturi repudiandae ipsa debitis alias. Quas ipsam dolorem tenetur quibusdam illo consequatur alias veritatis eaque excepturi totam! Cumque laudantium magni optio rerum! Exercitationem,
+                        alias vero! Eum maiores magni veritatis? Nemo ea commodi reiciendis saepe repellat ducimus possimus eveniet nulla quibusdam fuga!
+                    </div>
+                    <img class="nosotros__img" src="img/dog-4415649_1280.jpg" alt="">
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        function select(e, id) {
+            let buttons = Array.prototype.slice.call(document.getElementsByName("btn-nav"));
+
+            buttons.forEach(element => {
+                element.classList.remove("opciones-button--selected");
+            });
+
+            e.classList.toggle("opciones-button--selected");
+        }
+    </script>
+</body>
+
+</html>
