@@ -1,0 +1,17 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.paginas {
+    margin: 50px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.paginas__img {
+    width: 20rem;
+    margin: auto;
+}
