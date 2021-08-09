@@ -3,6 +3,11 @@
     margin: 0px;
 }
 
+.center {
+    text-align: center;
+    margin: auto;
+}
+
 .container {
     overflow: hidden;
     height: 100%;
@@ -61,4 +66,54 @@
 .paginas__img {
     width: 20rem;
     margin: auto;
+}
+
+.nav__btn-container {
+    visibility: hidden;
+}
+
+@media (min-width: 1900px) {
+    body {
+        font-size: 25px;
+    }
+    .nosotros {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .nav__options {
+        position: absolute;
+        overflow-y: scroll;
+        justify-content: normal;
+        align-items: initial;
+        padding: 0px;
+        margin: 0px;
+        margin-top: 60px;
+        padding-bottom: 10px;
+        padding-top: 20px;
+        width: 100%;
+        height: 100vh;
+        background: #1a94f3;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        transition: 1s left;
+        top: 0px;
+        left: 0px;
+        z-index: 5;
+    }
+    .nav__btn-container {
+        padding: 5px;
+        visibility: visible;
+        display: flex;
+        z-index: 2;
+    }
+    .nav__options--close {
+        transition: 1s left;
+        left: -100%;
+    }
+    .persentation-img__text {
+        padding: 0px;
+    }
 }
